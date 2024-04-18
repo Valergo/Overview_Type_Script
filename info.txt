@@ -11,42 +11,50 @@ git config --global user.name mynameisthis
 git config --global user.email myemail@adress.com
 
 
-modifed:
+# modified:
 	cd path
 	git init
 
 -> green new files, not commited of course
 -> orange files are changed but not commited!
 
-status:
+# status:
 	git status
 
-add files:
+# add files:
 	git add file.js index.html etc <-- add specific file(s)
 	git add .   <-- add all files which
 
-unstage files:
+# unstage files:
 	git rm -cached index.html etc
 
 
-commit:
+# commit:
 git commit -m "Hello i made a commit :)"
 
-log view:
+# log view:
 git log --oneline
 
-ckeckout:
+# checkout:
 git checkout ID  <-- you get it with git log --oneline
 
-Revert:
+# revert:
 git revert ID
 
-Reset:
+# reset:
 git reset ID << Id is the point from which the younger IDs will deleted
-git reset ID --hard << hard will delet the file not only the commit
+git reset ID --hard << hard will delete the file not only the commit
 
 Branch:
 =======
 git branch new_feature << create new Branch
 git branch -a << shows all branch including master
-git checkout new_featur ...or master << switch to branch
+git checkout new_feature ...or master << switch to branch
+
+# delete branch: (from master branch)
+git branch -d feature_branch << throws an error if branch is not completely merged before
+git branch -D feature_branch << if so, use -D to delete a not fully merged branch
+
+# working on two branches at ones:
+git checkout -b extra_feature << create a branch and switch to it in just ONE STEP!
+git commit -m "added file special_ts.ts for future use"
