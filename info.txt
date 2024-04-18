@@ -55,6 +55,13 @@ git checkout new_feature ...or master << switch to branch
 git branch -d feature_branch << throws an error if branch is not completely merged before
 git branch -D feature_branch << if so, use -D to delete a not fully merged branch
 
-# working on two branches at ones:
-git checkout -b extra_feature << create a branch and switch to it in just ONE STEP!
-git commit -m "added file special_ts.ts for future use"
+# working on two branches at ones:(workflow)
+git checkout -b firs_branch << create a branch and switch to it in just ONE STEP!
+git add .
+git commit -m "first branch message"
+git checkout master << switch to master
+git checkout -b next_branch << create next branch and switch
+git add .
+git commit -m "sec branch message"
+git checkout master
+git branch -a << now it will show all branches in which someone is current working
