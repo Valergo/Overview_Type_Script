@@ -35,4 +35,14 @@ git commit -m "Hello i made a commit :)"
 log view:
 git log --oneline
 
+ckeckout:
 git checkout ID  <-- you get it with git log --oneline
+
+Revert:
+git revert ID
+
+Reset:
+git reset ID << Id is the point from which the younger IDs will deleted
+git reset ID --hard << hard will delet the file not only the commit
+
+
