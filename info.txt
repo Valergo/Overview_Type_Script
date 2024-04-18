@@ -45,4 +45,12 @@ Reset:
 git reset ID << Id is the point from which the younger IDs will deleted
 git reset ID --hard << hard will delet the file not only the commit
 
+BRANCHEN:
+=========
+git branch new_feature << implement new stuff
+git branch -a << shows all branches including master
+git checkout new_feature << switch to the specific branche
+
+
+
 
