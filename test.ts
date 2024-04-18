@@ -43,9 +43,4 @@ const kidis: { kind_1: string, kind_2: string, kind_3: string, kind_4: string, k
   kind_5: "Clara"
 }
 // object
-all_kids(kidis);
-
-
-function all_kids( kind_1: string, kind_4: string, kind_2: string, kind_5: string, kind_3: string) {
-  const kids_order = "First Kid is: " + kind_1 + " followed by : " +  kind_4 + " than was " + kind_2 + " born. " + "At last but not least :" + kind_5 + " and of course: " + kind_3
-}
+// ...
