@@ -11,7 +11,7 @@ git config --global user.name mynameisthis
 git config --global user.email myemail@adress.com
 
 
-modifed:	
+modifed:
 	cd path
 	git init
 
@@ -27,7 +27,7 @@ add files:
 
 unstage files:
 	git rm -cached index.html etc
-	
+
 
 commit:
 git commit -m "Hello i made a commit :)"
@@ -45,4 +45,8 @@ Reset:
 git reset ID << Id is the point from which the younger IDs will deleted
 git reset ID --hard << hard will delet the file not only the commit
 
-
+Branch:
+=======
+git branch new_feature << create new Branch
+git branch -a << shows all branch including master
+git checkout new_featur ...or master << switch to branch
