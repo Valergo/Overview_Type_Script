@@ -1,0 +1,16 @@
+RUN file with:
+ts-node file.ts
+
+(INSTALL: npm install -g ts-node )
+
+
+
+GIT:
+====
+modifed:	
+cd path
+git init
+
+gree files are changed but not commited!
+
+commit:
