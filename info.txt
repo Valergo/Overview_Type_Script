@@ -7,10 +7,32 @@ ts-node file.ts
 
 GIT:
 ====
-modifed:	
-cd path
-git init
+git config --global user.name mynameisthis
+git config --global user.email myemail@adress.com
 
-gree files are changed but not commited!
+
+modifed:	
+	cd path
+	git init
+
+-> green new files, not commited of course
+-> orange files are changed but not commited!
+
+status:
+	git status
+
+add files:
+	git add file.js index.html etc <-- add specific file(s)
+	git add .   <-- add all files which
+
+unstage files:
+	git rm -cached index.html etc
+	
 
 commit:
+git commit -m "Hello i made a commit :)"
+
+log view:
+git log --oneline
+
+git checkout ID  <-- you get it with git log --oneline
